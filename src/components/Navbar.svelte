@@ -14,7 +14,8 @@
   <div class="btns d-flex">
     <a class="btn btn-primary ml-1" href="/tickets" target="_blank">Register
       Now!</a>
-    <a class="btn btn-secondary ml-1" href="/tickets" target="_blank">Log In</a>
+    <a class="btn btn-secondary ml-1" href="/login/github" target="_blank">Log
+      In</a>
   </div>
 </div>
 <div class="docs-sidebar off-canvas-sidebar" id="sidebar">
