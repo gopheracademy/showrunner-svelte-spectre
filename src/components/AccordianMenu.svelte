@@ -13,6 +13,8 @@
   const venueItems = [
     { target: "/gc-2021/venue", label: "Call for Proposals" },
   ];
+
+  const dashboardItems = [{ target: "/dashboard", label: "My GC" }];
 </script>
 
 <div class="accordion-container">
@@ -21,4 +23,8 @@
   <AccordianSection title="Sponsors" section="sponsors" items={sponsorsItems} />
   <AccordianSection title="Agenda" section="agenda" items={agendaItems} />
   <AccordianSection title="Venue" section="venue" items={venueItems} />
+  <AccordianSection
+    title="Dashboard"
+    section="dashboard"
+    items={dashboardItems} />
 </div>
