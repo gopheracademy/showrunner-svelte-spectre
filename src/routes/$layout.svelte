@@ -28,6 +28,15 @@
   import Navbar from "$components/Navbar";
 
   import { setContext } from "svelte";
+
+  import {
+    user,
+    userId,
+    token,
+    getToken,
+    getUserInfo,
+  } from "$components/stores/auth";
+  $: console.log($user);
   export let event;
   export let gcDetails = event.Event;
   setContext("gcDetails", gcDetails);
