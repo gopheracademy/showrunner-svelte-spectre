@@ -27,7 +27,7 @@
 <script>
   import Navbar from "$components/Navbar";
 
-  import { setContext } from "svelte";
+  import { setContext, onMount } from "svelte";
 
   import {
     user,
@@ -36,7 +36,10 @@
     getToken,
     getUserInfo,
   } from "$components/stores/auth";
-  $: console.log($user);
+  onMount(async () => {
+    console.log($user);
+  });
+
   export let event;
   export let gcDetails = event.Event;
   setContext("gcDetails", gcDetails);
