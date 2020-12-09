@@ -26,5 +26,16 @@
   </div>
   <div class="docs-nav">
     <AccordianMenu />
+    <div class="accordion">
+      <input
+        id="accordion-dashboard"
+        type="checkbox"
+        name="docs-accordion-checkbox"
+        hidden="true"
+        checked="" />
+      <a href="/dashboard"><label
+          class="accordion-header c-hand"
+          for="accordion-dashboard">My GC</label></a>
+    </div>
   </div>
 </div><a class="off-canvas-overlay" href="#close" />
