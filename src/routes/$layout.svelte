@@ -29,17 +29,6 @@
 
   import { setContext, onMount } from "svelte";
 
-  import {
-    user,
-    userId,
-    token,
-    getToken,
-    getUserInfo,
-  } from "$components/stores/auth";
-  onMount(async () => {
-    console.log($user);
-  });
-
   export let event;
   export let gcDetails = event.Event;
   setContext("gcDetails", gcDetails);
