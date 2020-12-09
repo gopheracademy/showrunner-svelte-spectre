@@ -8,14 +8,14 @@
       "Content-Type": "application/json",
     };
     const response = await this.fetch(
-      "http://127.0.0.1:4060/conferences.GetCurrentByEvent",
+      "https://showrunner-46b2.encoreapi.com/dev/conferences.GetCurrentByEvent",
       {
         method: "POST",
         headers: headers,
         body: JSON.stringify({ EventID: 1 }),
       }
     );
-
+    console.log(response);
     return response.json().then((event) => {
       if (event.error) {
         throw new Error(event.error);
