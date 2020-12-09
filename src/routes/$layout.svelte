@@ -15,7 +15,6 @@
         body: JSON.stringify({ EventID: 1 }),
       }
     );
-    console.log(response);
     return response.json().then((event) => {
       if (event.error) {
         throw new Error(event.error);
